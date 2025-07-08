@@ -3,6 +3,7 @@ FastWebCloner este o aplicație de tip web scraper + offline site cloner care pe
 
 
 Acest lucru implică:
+
 -> Snapshot pentru o singură pagină web: salvarea paginii și a tuturor resurselor de pe pagina respectivă (documente, imagini etc) și înlocuirea link-urilor cu link-uri locale
 
 -> Snapshot pentru un domeniu: același lucru ca la o singură pagină, dar pentru toate paginile accesibile pe domeniul respectiv. Pentru identificarea acestora se vor prelua recursiv linkurile de pe pagină și apoi se vor descărca și paginile respective, iar suplimentar aplicația va avea și un dicționar de pagini pe care sa le “încerce” (ex: /index, /files, /profile, etc.)
