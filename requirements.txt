@@ -1,0 +1,11 @@
+# requirements.txt
+
+TODO: Adauga dependente suplimentare:
+- [ ] tqdm>=4.65.0 # Pentru progress bars in CLI
+- [ ] colorama>=0.4.6 # Pentru output colorat in terminal
+- [ ] python-dotenv>=1.0.0 # Pentru configurare din fisiere .env
+- [ ] validators>=0.20.0 # Pentru validari avansate
+- [ ] fake-useragent>=1.4.0 # Pentru rotatie user agents
+- [ ] tenacity>=8.2.0 # Pentru retry logic avansat
+- [ ] click>=8.1.0 # Pentru CLI
+- [ ] pyinstaller>=5.13.0 # Pentru crearea executabilelor
