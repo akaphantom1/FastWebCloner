@@ -1,17 +1,22 @@
-"""main.py
+#!/usr/bin/env python3
+import sys
+import logging
+from ui.main_window import WebClonerApp
 
-TODO: Adauga functionalitati suplimentare:
-- [ ] Adauga argument parser pentru linie de comanda
-- [ ] Implementeaza optiuni CLI: --url, --output, --depth, --pages
-- [ ] Adauga verificare versiune Python
-- [ ] Implementeaza mod headless (fara GUI)
-- [ ] Adauga handler pentru semnale (SIGINT, SIGTERM)
-- [ ] Implementeaza logging in fisier
-- [ ] Adauga verificare dependente la pornire
-- [ ] Implementeaza auto-update checker
-- [ ] Adauga crash reporter
-- [ ] Implementeaza telemetrie anonima (optional)
-"""
+# Configurare logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+
+def main():
+    """Functia principala care porneste aplicatia"""
+    try:
+        app = WebClonerApp()
+        app.run()
+    except Exception as e:
+        logging.error(f"Eroare la pornirea aplicatiei: {e}")
+        sys.exit(1)
 
 if __name__ == "__main__":
-    pass
+    main()
